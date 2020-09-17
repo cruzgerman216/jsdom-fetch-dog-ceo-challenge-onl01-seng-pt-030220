@@ -18,6 +18,23 @@ function renderImages(images){
 }
 
 
+function getBreeds() {
+  return fetch(breedUrl)
+    .then(resp => resp.json())
+    .then(json => renderBreeds(json))
+}
+
+function renderBreeds(images){
+  console.log(images.message);
+  const main = document.querySelector('body');
+  images.message.forEach(image => {
+    const img = document.createElement('img');
+    img.src = image;
+    main.appendChild(img);
+  })
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   getImages();
 })
+
