@@ -38,10 +38,6 @@ function renderBreeds(breeds){
       })
     }
   }
-  // const main = document.getElementById('dog-breeds');
-  // breeds.message.forEach(breed => {
-
-  // })
 }
 
 document.addEventListener('DOMContentLoaded', function() {
