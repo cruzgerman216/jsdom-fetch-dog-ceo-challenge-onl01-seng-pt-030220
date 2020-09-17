@@ -11,7 +11,7 @@ function renderImages(json){
   books.forEach(image => {
     const img = document.createElement('img')
     img.src = image;
-    main.appendChild(img) 
+    main.appendChild(img);
   })
 }
 
