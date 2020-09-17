@@ -28,10 +28,12 @@ function renderBreeds(breeds){
   const main = document.querySelector('body');
 
   for (const breed in object){
+    const list = document.createElement('li');
+    main.appendChild(list);
     object[breed].forEach(b =>{
         const text = document.createElement('ul');
         text.innerHTML = b;
-        main.appendChild(text);
+        list.appendChild(text);
     })
   }
   // const main = document.getElementById('dog-breeds');
