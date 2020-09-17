@@ -6,9 +6,9 @@ function getImages() {
     .then(json => renderImages(json))
 }
 
-function renderImages(json){
+function renderImages(images){
   const main = document.querySelector('main')
-  books.forEach(image => {
+  images.forEach(image => {
     const img = document.createElement('img')
     img.src = image;
     main.appendChild(img);
