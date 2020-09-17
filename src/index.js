@@ -25,7 +25,7 @@ function getBreeds() {
 
 function renderBreeds(breeds){
   console.log(breeds.message.flat);
-  
+
   const main = document.getElementById('dog-breeds');
   breeds.message.forEach(breed => {
     const text = document.createElement('ul');
