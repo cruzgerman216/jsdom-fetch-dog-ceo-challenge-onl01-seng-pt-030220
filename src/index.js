@@ -24,7 +24,7 @@ function getBreeds() {
 }
 
 function renderBreeds(breeds){
-  // console.log(breeds.message);
+  console.log(breeds.message);
 
   for (const breed in breeds.message){
     console.log(breed);
