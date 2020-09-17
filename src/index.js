@@ -26,10 +26,10 @@ function getBreeds() {
 
 function renderBreeds(breeds){
   const main = document.getElementById('dog-breeds');
-  breeds.message.forEach(image => {
-    const img = document.createElement('img');
-    img.src = image;
-    main.appendChild(img);
+  breeds.message.forEach(breed => {
+    const text = document.createElement('ul');
+    text.innerHTML = breed;
+    main.appendChild(text);
   })
 }
 
