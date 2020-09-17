@@ -7,7 +7,7 @@ function getImages() {
 }
 
 function renderImages(images){
-  console.log(images);
+  console.log(images.message);
   const main = document.querySelector('main');
   images.message.forEach(image => {
     const img = document.createElement('img');
