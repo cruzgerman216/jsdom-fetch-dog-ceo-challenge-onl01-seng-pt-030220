@@ -28,7 +28,7 @@ function renderBreeds(breeds){
   const main = document.querySelector('body');
 
   for (const breed in object){
-    console.log(breed.length);
+    console.log(breed);
     if(breed.length != 0) {
       const list = document.createElement('li');
       main.appendChild(list);
