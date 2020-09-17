@@ -26,9 +26,9 @@ function getBreeds() {
 function renderBreeds(breeds){
   object = breeds.message
   const main = document.querySelector('body');
+  console.log(object);
 
   for (const breed in object){
-    console.log(object);
     if(breed.length != 0) {
       const list = document.createElement('li');
       main.appendChild(list);
