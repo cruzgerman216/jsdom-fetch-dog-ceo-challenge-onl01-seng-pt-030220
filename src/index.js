@@ -7,6 +7,7 @@ function getImages() {
 }
 
 function renderImages(images){
+  console.log(images);
   const main = document.querySelector('main')
   images.forEach(image => {
     const img = document.createElement('img')
