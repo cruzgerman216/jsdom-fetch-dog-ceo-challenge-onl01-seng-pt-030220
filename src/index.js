@@ -24,10 +24,9 @@ function getBreeds() {
     .then(json => renderBreeds(json))
 }
 
-function renderBreeds(images){
-  console.log(images.message);
-  const main = document.querySelector('body');
-  images.message.forEach(image => {
+function renderBreeds(breeds){
+  const main = document.getElementById('dog-breeds');
+  breeds.message.forEach(image => {
     const img = document.createElement('img');
     img.src = image;
     main.appendChild(img);
