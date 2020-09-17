@@ -28,14 +28,14 @@ function renderBreeds(breeds){
 
   for (const breed in object){
     object[breed].forEach(b =>{
-      console.log(b);
+        const text = document.createElement('ul');
+        text.innerHTML = b;
+        main.appendChild(text);
     })
   }
   // const main = document.getElementById('dog-breeds');
   // breeds.message.forEach(breed => {
-  //   const text = document.createElement('ul');
-  //   text.innerHTML = breed;
-  //   main.appendChild(text);
+
   // })
 }
 
