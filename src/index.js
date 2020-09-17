@@ -21,4 +21,3 @@ function renderImages(images){
 document.addEventListener('DOMContentLoaded', function() {
   getImages();
 })
-
