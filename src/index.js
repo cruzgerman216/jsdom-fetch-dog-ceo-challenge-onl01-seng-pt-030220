@@ -28,6 +28,7 @@ function renderBreeds(breeds){
   const main = document.querySelector('body');
 
   for (const breed in object){
+    console.log(breed);
     const list = document.createElement('li');
     main.appendChild(list);
     object[breed].forEach(b =>{
