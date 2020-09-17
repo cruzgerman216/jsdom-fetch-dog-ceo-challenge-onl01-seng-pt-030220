@@ -29,14 +29,14 @@ function renderBreeds(breeds){
 
   for (const breed in object){
     if breed.length != 0 {
-    const list = document.createElement('li');
-    main.appendChild(list);
-    object[breed].forEach(b =>{
-        const text = document.createElement('ul');
-        text.innerHTML = b;
-        list.appendChild(text);
-    })
-  }
+      const list = document.createElement('li');
+      main.appendChild(list);
+      object[breed].forEach(b =>{
+          const text = document.createElement('ul');
+          text.innerHTML = b;
+          list.appendChild(text);
+      })
+    }
   }
   // const main = document.getElementById('dog-breeds');
   // breeds.message.forEach(breed => {
