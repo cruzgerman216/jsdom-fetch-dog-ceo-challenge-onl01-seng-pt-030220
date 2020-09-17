@@ -26,8 +26,8 @@ function getBreeds() {
 function renderBreeds(breeds){
   // console.log(breeds.message);
 
-  for (breeds.message in breed){
-    breed.forEach(b =>{
+  for (breeds.message in object){
+    object.forEach(b =>{
       console.log(b);
     })
   }
