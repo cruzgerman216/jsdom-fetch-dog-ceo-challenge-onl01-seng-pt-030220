@@ -26,7 +26,6 @@ function getBreeds() {
 function renderBreeds(breeds){
   object = breeds.message
   const main = document.querySelector('body');
-  console.log(object);
 
   for (const breed in object){
     if(object[breed]!= 0) {
