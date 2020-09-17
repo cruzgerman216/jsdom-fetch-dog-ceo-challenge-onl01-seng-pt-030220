@@ -24,14 +24,19 @@ function getBreeds() {
 }
 
 function renderBreeds(breeds){
-  console.log(breeds.message);
+  // console.log(breeds.message);
 
-  const main = document.getElementById('dog-breeds');
-  breeds.message.forEach(breed => {
-    const text = document.createElement('ul');
-    text.innerHTML = breed;
-    main.appendChild(text);
-  })
+  for (breeds.message in breed){
+    breed.forEach(b =>{
+      console.log(b);
+    })
+  }
+  // const main = document.getElementById('dog-breeds');
+  // breeds.message.forEach(breed => {
+  //   const text = document.createElement('ul');
+  //   text.innerHTML = breed;
+  //   main.appendChild(text);
+  // })
 }
 
 document.addEventListener('DOMContentLoaded', function() {
