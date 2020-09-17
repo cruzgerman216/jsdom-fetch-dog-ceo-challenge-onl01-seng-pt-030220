@@ -7,7 +7,12 @@ function getImages() {
 }
 
 function renderImages(json){
-
+  const main = document.querySelector('main')
+  books.forEach(image => {
+    const img = document.createElement('img')
+    img.src = image;
+    main.appendChild(img) 
+  })
 }
 
 
