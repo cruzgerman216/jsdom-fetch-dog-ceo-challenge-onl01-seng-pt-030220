@@ -7,7 +7,7 @@ function getImages() {
 }
 
 function renderImages(json){
-  
+
 }
 
 
