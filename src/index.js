@@ -27,7 +27,7 @@ function renderBreeds(breeds){
   // console.log(breeds.message);
 
   for (const breed in breeds.message){
-    object.forEach(b =>{
+    breed.forEach(b =>{
       console.log(b);
     })
   }
