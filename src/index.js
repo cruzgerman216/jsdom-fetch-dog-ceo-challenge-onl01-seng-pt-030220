@@ -28,7 +28,7 @@ function renderBreeds(breeds){
   const main = document.querySelector('body');
 
   for (const breed in object){
-    console.log(breed);
+    if breed.length != 0 {
     const list = document.createElement('li');
     main.appendChild(list);
     object[breed].forEach(b =>{
@@ -36,6 +36,7 @@ function renderBreeds(breeds){
         text.innerHTML = b;
         list.appendChild(text);
     })
+  }
   }
   // const main = document.getElementById('dog-breeds');
   // breeds.message.forEach(breed => {
