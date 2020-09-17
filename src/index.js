@@ -29,7 +29,7 @@ function renderBreeds(breeds){
   console.log(object);
 
   for (const breed in object){
-    if(breed.length != 0) {
+    if(object[breed]!= 0) {
       const list = document.createElement('li');
       main.appendChild(list);
       object[breed].forEach(b =>{
