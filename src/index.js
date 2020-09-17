@@ -37,4 +37,3 @@ function renderBreeds(images){
 document.addEventListener('DOMContentLoaded', function() {
   getImages();
 })
-
